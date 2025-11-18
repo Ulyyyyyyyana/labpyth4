@@ -25,4 +25,5 @@ def password_generator(length=12):
 
 
 def multiply_lists(list1, list2):
-    return map(operator.mul, list1, list2)
+    for a, b in zip(list1, list2):
+        yield a * b
